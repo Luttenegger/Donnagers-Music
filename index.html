@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Moosic</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Donnagers">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<link rel="stylesheet" type="text/css" href="styles/custom.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+<link rel="icon" href="favicon.ico" sizes="16x16" type="image/png"> 
+</head>
+<body data-target=".navbar">
+
+<div class="super_container" id="#main">
+	
+	<!-- Header -->
+	<header class="header">
+		<div class="header_content d-flex flex-row align-items-center justify-content-center">
+			<div class="logo"><a href="#">Donnagers</a></div>
+			<nav class="main_nav">
+				<ul class="d-flex flex-row align-items-start justify-content-start navbar">
+					<li><a href="#main">Home</a></li>
+					<li><a href="#music">Music</a></li>
+					<li><a href="#events">Events</a></li>
+					<li><a href="#about">About us</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="hamburger ml-auto">
+				<div class="d-flex flex-column align-items-end justify-content-between">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Menu -->
+
+	<div class="menu">
+		<div>
+			<div class="menu_overlay"></div>
+			<div class="menu_container d-flex flex-column align-items-start justify-content-center">
+				<nav class="menu_nav">
+					<ul class="d-flex flex-column align-items-start justify-content-start">
+							<li><a href="#main">Home</a></li>
+							<li><a href="#music">Music</a></li>
+							<li><a href="#events">Events</a></li>
+							<li><a href="#about">About us</a></li>
+							<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+	<div class="home-content" id="main">
+		<div class="video-overlay"></div>
+		<div class="video_title"><h1>Donnagers</h1></div>
+		<video autoplay muted loop id="myVideo">
+			<source src="https://www.videvo.net/videvo_files/converted/2016_07/preview/160720_21_ReeltoReel_VU2_2K.mp446900.webm" type="video/mp4">
+			Your browser does not support HTML5 video.
+		</video>
+		<img class="cover-image" src="images/index.jpg" />
+	</div>
+
+	<div class="featured_album odd" id="music">
+		<div class="background_image featured_background" style="background-image:url(images/featured.png)"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 offset-lg-6">
+					<div class="section_title_container">
+						<div class="section_title"><h1>Featured Album</h1></div>
+					</div>
+				</div>
+			</div>
+			<div class="row featured_row row-lg-eq-height">
+
+				<!-- Featured Album Image -->
+				<div class="col-md-6">
+					<div class="featured_album_image">
+						<div class="image_overlay"></div>
+						<div class="background_image album-title" style="background-image:url(images/featured_album.jpg)">
+						<h1>DONNAGERS</h1><br>
+						<h4>Udder Chaos</h4>
+					</div>
+						<!-- <img src="images/featured_album.jpg" alt=""> -->
+					</div>
+				</div>
+
+				<!-- Featured Album Player -->
+				<div class="col-md-6 featured_album_col">
+					<div class="featured_album_player_container d-flex flex-column align-items-start justify-content-center">
+						<div class="featured_album_player">
+							<div class="featured_album_title_bar d-flex flex-row align-items-center justify-content-start">
+								<div class="featured_album_title_container">
+									<div class="featured_album_artist">Donnagers</div>
+									<div class="featured_album_title">Udder Chaos</div>
+									<div class="music-container"></div>
+								</div>
+								<div class="featured_album_link ml-auto"><a href="#">buy it on itunes</a></div>
+							</div>
+							<div id="jplayer_1" class="jp-jplayer"></div>
+							<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+								<div class="jp-type-playlist">
+									<div class="jp-playlist">
+										<ul>
+											<li></li>
+										</ul>
+									</div>
+									<div class="player_details d-flex flex-row align-items-center justify-content-start">
+										<div class="jp-details">
+											<div>playing</div>
+											<div class="jp-title" aria-label="title">&nbsp;</div>
+										</div>
+										<div class="jp-controls-holder ml-auto">
+											<button class="jp-play" tabindex="0"></button>
+										</div>
+									</div>
+									<div class="player_controls">
+										<div class="jp-gui jp-interface d-flex flex-row align-items-center justify-content-start">
+											<div class="jp-controls-holder time_controls d-flex flex-row align-items-center justify-content-start">
+												<div><div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div></div>
+												<div class="jp-progress">
+													<div class="jp-seek-bar">
+														<div class="jp-play-bar"></div>
+													</div>
+												</div>
+												<div><div class="jp-duration ml-auto" role="timer" aria-label="duration">&nbsp;</div></div>
+											</div>
+											<div class="jp-volume-controls d-flex flex-row align-items-center justify-content-start ml-auto">
+												<button class="jp-mute" tabindex="0"></button>
+												<div class="jp-volume-bar">
+													<div class="jp-volume-bar-value"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="jp-no-solution">
+										<span>Update Required</span>
+										To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Shows -->
+
+	<div class="shows" id="events">
+		<div class="container">
+			<div class="row" style="z-index:10;">
+				<div class="col">
+					<div class="section_title_container">
+						<div class="section_subtitle">Events</div>
+						<div class="section_title"><h1>Upcoming Shows</h1></div>
+					</div>
+				</div>
+			</div>
+			<div class="row shows_row">
+				
+				<!-- Shows List -->
+				<div class="col-lg-8 order-lg-1 order-2 shows_list_col">
+					<div class="shows_list_container">
+						<ul class="shows_list">
+
+							<!-- Show -->
+							<li class="d-flex flex-row align-items-center justify-content-start">
+								<div><div class="show_date">18/07</div></div>
+								<div class="show_info d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-start justify-content-center">
+									<div class="show_name"><a href="#">Electric Festival</a></div>
+									<div class="show_location">Cluj, Romania</div>
+								</div>
+								<div class="ml-auto"><div class="show_shop trans_200"><a href="#">Buy Tickets</a></div></div>
+							</li>
+
+							<!-- Show -->
+							<li class="d-flex flex-row align-items-center justify-content-start">
+								<div><div class="show_date">20/07</div></div>
+								<div class="show_info d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-start justify-content-center">
+									<div class="show_name"><a href="#">Ultra Festival</a></div>
+									<div class="show_location">Miami, USA</div>
+								</div>
+								<div class="ml-auto"><div class="show_shop trans_200"><a href="#">Buy Tickets</a></div></div>
+							</li>
+
+							<!-- Show -->
+							<li class="d-flex flex-row align-items-center justify-content-start">
+								<div><div class="show_date">03/08</div></div>
+								<div class="show_info d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-start justify-content-center">
+									<div class="show_name"><a href="#">Untold Festival</a></div>
+									<div class="show_location">Cluj, Romania</div>
+								</div>
+								<div class="ml-auto"><div class="show_shop trans_200"><a href="#">Buy Tickets</a></div></div>
+							</li>
+
+							<!-- Show -->
+							<li class="d-flex flex-row align-items-center justify-content-start">
+								<div><div class="show_date">11/08</div></div>
+								<div class="show_info d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-start justify-content-center">
+									<div class="show_name"><a href="#">Sun Festival</a></div>
+									<div class="show_location">Paris, France</div>
+								</div>
+								<div class="ml-auto"><div class="show_shop trans_200"><a href="#">Buy Tickets</a></div></div>
+							</li>
+
+							<!-- Show -->
+							<li class="d-flex flex-row align-items-center justify-content-start">
+								<div><div class="show_date">18/08</div></div>
+								<div class="show_info d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-start justify-content-center">
+									<div class="show_name"><a href="#">Spanish Festival</a></div>
+									<div class="show_location">Madrid, Spain</div>
+								</div>
+								<div class="ml-auto"><div class="show_shop trans_200"><a href="#">Buy Tickets</a></div></div>
+							</li>
+
+							<!-- Show -->
+							<li class="d-flex flex-row align-items-center justify-content-start">
+								<div><div class="show_date">25/08</div></div>
+								<div class="show_info d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-start justify-content-center">
+									<div class="show_name"><a href="#">Vikings Festival</a></div>
+									<div class="show_location">Oslo, Norway</div>
+								</div>
+								<div class="ml-auto"><div class="show_shop trans_200"><a href="#">Buy Tickets</a></div></div>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+
+				<!-- Shows Image -->
+				<div class="col-lg-4 order-lg-2 order-1">
+					<div class="shows_image">
+						<div class="image_overlay"></div>
+						<img src="images/shows.jpg" alt="https://unsplash.com/@anthonydelanoix">
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Artist -->
+
+	<div class="artist odd" id="about">
+		<div class="container">
+			<div class="row">
+				<!-- Artist Image -->
+				<div class="col-lg-6 artist_image_col">
+					<div class="artist_image">
+						<img src="images/artist.png" alt="">
+					</div>
+				</div>
+				<!-- Artist Content -->
+				<div class="col-lg-6">
+					<div class="artist_content">
+						<div class="section_title_container">
+							<div class="section_title"><h1>The Band
+								<span class="pull-right">
+									<a href="#"><i class="fab artistSocial fa-youtube trans_200"></i></a>
+									<a href="#"><i class="fab artistSocial fa-twitter trans_200"></i></a>
+									<a href="#"><i class="fab artistSocial fa-facebook trans_200"></i></a>
+								</span></h1>
+							</div>
+						</div>
+						<div class="artist_text">
+							<p> In vitae nisi aliquam, scelerisque leo a, volutpat sem. Vivamus rutrum dui fermentum eros hendrerit, id lobortis leo volutpat. Maecenas sollicitudin est in libero pretium interdum. Nullam volutpat dui sem, ac congue purus luctus nec. Curabitur luctus luctus erat, sit amet facilisis quam congue quis. Quisque ornare luctus erat id dignissim. Nullam ac nunc quis ex porttitor luctus.</p>
+							<p>Integer sed facilisis eros. In iaculis rhoncus velit in malesuada. In hac habitasse platea dictumst. Fusce erat ex, consectetur sit amet ornare suscipit, porta et erat. Donec nec nisi in nibh commodo laoreet. Mauris dapibus justo ut feugiat malesuada. Fusce ultricies ante tortor, non vestibulum est feugiat ut.</p>
+						</div>
+						<div class="artist_sig"><img src="images/sig.png" alt=""></div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+	<footer class="footer" id="contact">
+		<section class="mb-4">
+				<!--Section heading-->
+				<h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+				<!--Section description-->
+				<div class="row">
+					<!--Grid column-->
+					<div class="col-md-12 mb-md-0 mb-5" style="max-width:600px; margin-left:auto; margin-right:auto;">
+						<form id="contact-form" name="contact-form" action="mail.php" method="POST">
+			
+							<!--Grid row-->
+							<div class="row">
+			
+								<!--Grid column-->
+								<div class="col-md-6">
+									<div class="md-form mb-0">
+										<input type="text" id="name" name="name" class="form-control form-input">
+										<label for="name" class="">Your name</label>
+									</div>
+								</div>
+								<!--Grid column-->
+			
+								<!--Grid column-->
+								<div class="col-md-6">
+									<div class="md-form mb-0">
+										<input type="email" id="email" name="email" class="form-control form-input">
+										<label for="email" class="">Your email</label>
+									</div>
+								</div>
+								<!--Grid column-->
+			
+							</div>
+							<!--Grid row-->
+			
+							<!--Grid row-->
+							<div class="row">
+								<div class="col-md-12">
+									<div class="md-form mb-0">
+										<input type="text" id="subject" name="subject" class="form-control form-input">
+										<label for="subject" class="">Subject</label>
+									</div>
+								</div>
+							</div>
+							<!--Grid row-->
+			
+							<!--Grid row-->
+							<div class="row">
+			
+								<!--Grid column-->
+								<div class="col-md-12">
+			
+									<div class="md-form">
+										<textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea form-input"></textarea>
+										<label for="message">Your message</label>
+									</div>
+			
+								</div>
+							</div>
+							<!--Grid row-->
+			
+						</form>
+			
+						<div class="text-center text-md-left pull-right">
+							<a class="btn btn-primary">Send</a>
+						</div>
+						<div class="status"></div>
+					</div>
+			
+				</div>
+			
+			</section>
+		</span>
+		</div>
+		<!-- Footer Elements -->
+		<div class="container">
+
+			<!-- Grid row-->
+			<div class="row">
+	  
+			  <!-- Grid column -->
+			  <div class="col-md-12 py-5">
+				<div class="mb-5 flex-center socialFooter">
+	  
+				  <!-- Facebook -->
+				  <a class="fb-ic">
+					<i class="trans_200 fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+				  </a>
+				  <!-- Twitter -->
+				  <a class="tw-ic">
+					<i class="trans_200 fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+				  </a>
+				  <!-- Google +-->
+				  <a class="gplus-ic">
+					<i class="trans_200 fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+				  </a>
+				  <!--Instagram-->
+				  <a class="ins-ic">
+					<i class="trans_200 fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+				  </a>
+				</div>
+			  </div>
+			  <!-- Grid column -->
+	  
+			</div>
+			<!-- Grid row-->
+	  
+		  </div>
+		  <!-- Footer Elements -->
+	  
+		  <!-- Copyright -->
+		  <div class="footer-copyright text-center py-3">© 2018 Copyright: Donnagers
+		  </div>
+		  <!-- Copyright -->
+	  
+	</footer>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap-4.1.2/popper.js"></script>
+<script src="styles/bootstrap-4.1.2/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="plugins/jPlayer/jquery.jplayer.min.js"></script>
+<script src="plugins/jPlayer/jplayer.playlist.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
